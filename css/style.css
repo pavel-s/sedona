@@ -5,4 +5,89 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
+
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  min-height: 56px;
+}
+
+.feature-1,
+.feature-2 {
+  height: 256px;
+  width: 768px;
+  outline: red dotted 2px;
+}
+
+.feature-1 .features-item {
+  float: left;
+}
+
+.feature-1 .feature-img {
+  float: right;
+}
+
+.features-more .features-item {
+  float: left;
+}
+
+.feature-2 .features-item {
+  float: right;
+}
+
+.feature-1 .feature-img {
+  float: left;
+}
+
+.features-3-to-5 .features-item {
+  min-height: 256px;
+  float: left;
+}
+
+.features-item {
+  text-align: center;
+  width: 33%;
+
+  background-color: rgba(0,0,0,0.2);
+}
+
+.feature-img {
+  width: 67%;
+  padding: 0px;
+  margin: 0;
+
+  background-color: rgba(0,0,0,0.4);
+}
+
+.features-img img {
+  width: 512px;
+  height: 256px;
+}
+
+.search-hotel-form {
+  width: 568px;
+  height: 395px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.footer-block {
+  width: 33%;
+  min-height: 120px;
+  float: left;
+  text-align: center;
+}
+
