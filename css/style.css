@@ -537,7 +537,20 @@ input[name="children"] {
   font-size: 14px;
 }
 
-.footer-copyright img {
-  margin-left: 5px;
+.copyright-img {
+  width: 113px;
+  height: 39px;
+  display: inline-block;
+  overflow: hidden;
   vertical-align: middle;
+  line-height: 39px;
+  margin-left: 5px;
+}
+
+.copyright-img:hover {
+  text-indent:-123px;
+}
+
+.copyright-img:active {
+  text-indent:-246px;
 }
