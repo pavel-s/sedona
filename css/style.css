@@ -1,3 +1,69 @@
+@font-face {
+  font-family: 'symbols-sedona';
+  src: url('../font/symbols-sedona.eot?60737633');
+  src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+       url('../font/symbols-sedona.woff?60737633') format('woff'),
+       url('../font/symbols-sedona.ttf?60737633') format('truetype'),
+       url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-sedona";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-calendar:before { content: '\e800'; } /* '' */
+.icon-plus:before { content: '\e801'; } /* '' */
+.icon-minus:before { content: '\e802'; } /* '' */
+.icon-youtube:before { content: '\f39e'; } /* '' */
+
+/***** Page styles ******/
+
 body {
   font-size: 14px;
   line-height: 26px;
@@ -5,6 +71,7 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
+  text-align: center;
 
   margin: 0;
   padding: 0;
@@ -15,6 +82,15 @@ body {
   margin: 0 auto;
 }
 
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -23,71 +99,443 @@ body {
 
 .main-header {
   min-height: 56px;
+  position: relative;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+  width: 138px;
+  height: 70px;
+  font-size: 0;
+  background: url(../img/logo.png) no-repeat center;
+}
+
+.main-navigation {
+  padding: 0;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 46px;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  width: 110px;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 16px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.main-navigation a:active {
+  color: #cacaca;
+}
+
+.main-navigation li:nth-child(4n+2) {
+  margin-right: 150px;
+  margin-left: 43px;
+}
+
+.main-navigation li:nth-child(4n+3) {
+  margin-right: 43px;
+}
+
+.main-navigation li:nth-child(4n+3),
+.main-navigation li:nth-child(4n) {
+  text-align: right;
+}
+
+.intro {
+  min-height: 512px;
+  background: url("../img/intro.jpg") no-repeat center;
+}
+
+.index-header {
+  color: #000000;
+  width: 440px;
+  font-size: 21px;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+}
+
+.index-header + p {
+  margin-bottom: 50px;
 }
 
 .feature-1,
 .feature-2 {
-  height: 256px;
+  min-height: 256px;
   width: 768px;
-  outline: red dotted 2px;
+  background-color: #81b3d2;
+  color: #fff;
+}
+
+.features-item {
+  line-height: 21px;
+}
+
+.feature-number {
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.feature-img img {
+  width: 512px;
+  height: 256px;
+  display: block;
 }
 
 .feature-1 .features-item {
+  width: 177px;
+  margin: 0 auto;
   float: left;
+  padding-left: 39.5px;
+  padding-right: 39.5px;
+}
+
+.features-title {
+  margin-top: 47px;
 }
 
 .feature-1 .feature-img {
   float: right;
+}
+
+.features-more {
+  padding: 0 4.5px;
 }
 
 .features-more .features-item {
   float: left;
+  min-height: 330px;
+  width: 165px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.features-more .features-item:nth-child(2) {
+  width: 160px;
+  padding-left: 46.5px;
+  padding-right: 46.5px;
+}
+
+.features-more-title {
+  margin-top: 52px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.features-more-title:before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.features-item:nth-child(1) .features-more-title:before {
+  background: url(../img/icon-home.png) no-repeat bottom;
+}
+
+.features-item:nth-child(2) .features-more-title:before {
+  background: url(../img/icon-eat.png) no-repeat bottom;
+}
+
+.features-item:nth-child(3) .features-more-title:before {
+  background: url(../img/icon-souvenir.png) no-repeat bottom;
 }
 
 .feature-2 .features-item {
+  width: 177px;
+  margin: 0 auto;
   float: right;
+  padding-left: 39.5px;
+  padding-right: 39.5px;
 }
 
-.feature-1 .feature-img {
+.feature-2 .feature-img {
   float: left;
+}
+
+.feature-2 .features-title {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .features-3-to-5 .features-item {
   min-height: 256px;
+  width: 160px;
   float: left;
+  padding-left: 48px;
+  padding-right: 48px;
+  background-color: #eeeeee;
 }
 
-.features-item {
-  text-align: center;
-  width: 33%;
-
-  background-color: rgba(0,0,0,0.2);
+.features-3-to-5 .features-item:nth-child(2) {
+  width: 145px;
+  padding-left: 55.5px;
+  padding-right: 55.5px;
 }
 
-.feature-img {
-  width: 67%;
-  padding: 0px;
-  margin: 0;
-
-  background-color: rgba(0,0,0,0.4);
+.search-hotel {
+  
 }
 
-.features-img img {
-  width: 512px;
-  height: 256px;
+.search-hotel-title {
+  margin-top: 53px;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.search-hotel-title + p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 0;
+  font-size: 21px;
+  font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-blue {
+  background-color: #81b3d2;
+}
+
+.btn-blue:hover {
+  background-color: #669ec0;
+}
+
+.btn-blue:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.btn-brown {
+  background-color: #766357;
+}
+
+.btn-brown:hover {
+  background-color: #604e43;
+}
+
+.btn-brown:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.btn-show-form {
+  width: 568px;
+  height: 86px;
+  margin-top: 47px;
 }
 
 .search-hotel-form {
-  width: 568px;
+  width: 513px;
   height: 395px;
   margin: 0 auto;
   background-color: white;
+  text-align: right;
+  padding-right: 55px;
+  
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 7px 15px 0.00px rgba(0, 1, 1, 0.15);
 }
 
-.footer-block {
-  width: 33%;
-  min-height: 120px;
-  float: left;
+.search-form {
+  font-weight: bold;
+}
+
+.search-form input {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[name="arrival-date"],
+input[name="departure-date"] {
+  width: 316px;
+  padding: 1px 15px;
+}
+
+input[name="arrival-date"] {
+  margin-top: 55px;
+  margin-left: 18px;
+}
+
+input[name="departure-date"] {
+  margin-top: 29px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.form-third-row {
+  font-size: 0;
+}
+
+.form-third-row label {
+  font-size: 14px;
+}
+
+.btn-plus,
+.btn-minus {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+
+.plus-minus {
+  display: inline-block;
+  height: 38px;
+}
+
+label[for="adults"] + .plus-minus {
+  margin-left: 41px;
+  margin-right: 54px;
+}
+
+label[for="children"] + .plus-minus {
+  margin-left: 26px;
+}
+
+input[name="adults"],
+input[name="children"] {
+  width: 36px;
+  height: 36px;
+  padding: 1px 1px;
+  vertical-align: bottom;
   text-align: center;
 }
 
+.btn-submit{
+  width: 458px;
+  height: 58px;
+  margin-top: 54px;
+}
+
+.map {
+  position: relative;
+  top: -395px;
+  z-index: 0;
+  width: 768px;
+  height: 593px;
+  background-image: url("../img/map.jpg");
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.main-footer {
+  min-height: 120px;
+  background-color: #fff;
+  background-color: rgba(256,256,256,0.9);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 120px;
+}
+
+.index-footer {
+  position: relative;
+  top: -515px;
+  z-index: 1;
+}
+
+.footer-block {
+  width: 256px;
+  float: left;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.social-btn {
+  font-size: 0;
+}
+
+.social-btn:before {
+  content: "";
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #81b3d2;
+  line-height: 48px;
+  vertical-align: middle;
+}
+
+.social-btn:hover:before {
+  background-color: #669ec0;
+}
+
+.social-btn:active:before {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.social-btn-twitter.social-btn:before {
+  content: "\74";
+  font-size: 19px;
+}
+
+.social-btn-facebook.social-btn:before {
+  content: "\66";
+  font-size: 19px;
+}
+
+.social-btn-youtube.social-btn:before {
+  content: "\f39e";
+  font-size: 21px;
+}
+
+.footer-copyright span {
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-copyright img {
+  margin-left: 5px;
+  vertical-align: middle;
+}
