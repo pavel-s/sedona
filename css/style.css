@@ -80,6 +80,7 @@ body {
 .container {
   width: 768px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 a {
@@ -378,19 +379,47 @@ a:hover {
 }
 
 .search-form input {
-  height: 36px;
-  background-color: #f2f2f2;
-  border: 0;
+  height: 32px;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
   font-size: 14px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.search-form input:hover {
+  background: #ebebeb;
+}
+
+.search-form input:focus {
+  background: #fff;
+}
+
 input[name="arrival-date"],
 input[name="departure-date"] {
-  width: 316px;
+  width: 324px;
   padding: 1px 15px;
+  padding-right: 7px
+}
+
+input[name="arrival-date"]:after,
+input[name="departure-date"]:after {
+  content: "\e800";
+  font-family: "symbols-sedona";
+  font-size: 21px;
+  color: #c2c2c2;
+  font-weight: normal;
+}
+
+input[name="arrival-date"]:hover:after,
+input[name="departure-date"]:hover:after {
+  color: #000;
+}
+
+input[name="arrival-date"]:focus:after,
+input[name="departure-date"]:focus:after {
+  color: #81b3d2;
 }
 
 input[name="arrival-date"] {
@@ -423,6 +452,16 @@ input[name="departure-date"] {
   background-color: #f2f2f2;
 }
 
+.btn-plus:hover,
+.btn-minus:hover {
+  color: #000;
+}
+
+.btn-plus:active,
+.btn-minus:active {
+  color: #81b3d2;
+}
+
 .plus-minus {
   display: inline-block;
   height: 38px;
@@ -439,8 +478,8 @@ label[for="children"] + .plus-minus {
 
 input[name="adults"],
 input[name="children"] {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   padding: 1px 1px;
   vertical-align: bottom;
   text-align: center;

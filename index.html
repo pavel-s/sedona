@@ -111,20 +111,20 @@
         </a>
         <div class="search-hotel-form">
           <form action="https://echo.htmlacademy.ru" class="search-form" name="search-form" method="post">
-            <label>Дата заезда: <input type="date" name="arrival-date" value="2014-04-24"></label><br>
-            <label>Дата выезда: <input type="date" name="departure-date" value="2014-07-04"></label><br>
+            <label>Дата заезда: <input type="text" name="arrival-date" value="24 апреля 2014"></label><br>
+            <label>Дата выезда: <input type="text" name="departure-date" value="4 июля 2014"></label><br>
             <div class="form-third-row">
               <label for="adults">Взрослые:</label>
                 <div class="plus-minus">
-                  <button class="btn-minus"><i class="icon-minus"></i></button>  
+                  <button class="btn-minus" disabled><i class="icon-minus"></i></button>  
                   <input type="text" name="adults" value="2" id="adults">
-                  <button class="btn-plus"><i class="icon-plus"></i></button> 
+                  <button class="btn-plus" disabled><i class="icon-plus"></i></button> 
                 </div>
               <label for="children">Дети:</label>
                 <div class="plus-minus">
-                  <button class="btn-minus"><i class="icon-minus"></i></button>    
+                  <button class="btn-minus" disabled><i class="icon-minus"></i></button>    
                   <input type="text" name="children" value="0" id="children">
-                  <button class="btn-plus"><i class="icon-plus"></i></button>
+                  <button class="btn-plus" disabled><i class="icon-plus"></i></button>
                 </div>      
             </div>
             <button type="submit" class="btn btn-blue btn-submit">Найти</button>
