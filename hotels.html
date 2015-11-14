@@ -35,44 +35,56 @@
 
     <main class="container">
      
-      <div class="hotel-filter">
+      <div class="hotel-filter clearfix">
         <form action="https://echo.htmlacademy.ru" class="filter-form" name="search-form" method="post">
-            <h2>Инфраструктура:</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="infrastructure" value="pool" id="pool" checked>
-                <label for="pool">Бассеин</label>
-              </li>
-              <li>
-                <input type="checkbox" name="infrastructure" value="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="infrastructure" value="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-            <h2>Тип жилья:</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="accommodation_type" value="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="accommodation_type" value="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="accommodation_type" value="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-            <h2>Стоимость в сутки (р):</h2>
-            <input type="number" name="price-min" placeholder="от 0">
-            <input type="number" name="price-max" placeholder="до 3000"><br>
-            <input type="range" name="price-min" id="price-min" value="0" min="0" max="3000">
-            <input type="range" name="price-max" id="price-max" value="2500" min="0" max="3000"><br>
-            <button type="submit">Показать</button>
+            <div class="filter-left">
+              <h2>Инфраструктура:</h2>
+              <ul>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="infrastructure" value="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="infrastructure" value="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="infrastructure" value="wi-fi" id="wi-fi">
+                  <label for="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-center">
+              <h2>Тип жилья:</h2>
+              <ul>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="accommodation_type" value="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="accommodation_type" value="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="custom-checkbox" name="accommodation_type" value="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-right">
+              <h2>Стоимость в сутки (р):</h2>
+              <input type="text" class="price-min" name="price-min" placeholder="от 0">
+              <div class="input-separator"></div>
+              <input type="text" class="price-max" name="price-max" placeholder="до 3000"><br>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <a href="#" class="btn-show">Показать</a>
+            </div>
           </form>
       </div>
       
@@ -147,7 +159,9 @@
     <div class="footer-block footer-copyright">
       <a href="https://htmlacademy.ru">
         <span>Website by</span>
-        <img src="img/logo_academy.png" alt="logo" width="113" height="39">
+        <div class="copyright-img">
+          <img src="img/logo-academy-s.png" alt="logo" width="359" height="39">
+        </div>
       </a>
     </div>
     
