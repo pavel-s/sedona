@@ -787,10 +787,19 @@ input:-ms-input-placeholder      {color:#fff;}
   text-align: center;
   line-height: 32px;
   margin-left: 44px;
+  background: none;
+  font-weight: normal;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  padding: 0;
 }
 
 .btn-show:hover {
   text-decoration: none;
+}
+
+.btn-show-hide {
+  display: none;
 }
 
 .hotel-list-header {
