@@ -139,6 +139,7 @@ a:hover {
   min-height: 40px;
   width: 110px;
   padding-top: 16px;
+  vertical-align: baseline;
 }
 
 .main-navigation a {
@@ -330,6 +331,7 @@ a:hover {
 .link-to-btn {
   display: inline-block;
   line-height: 86px;
+  vertical-align: baseline;
 }
 
 .link-to-btn:hover {
@@ -721,7 +723,7 @@ input[name="children"] {
 .price-max {
   color: #fff;
   font-size: 14px;
-  font-family: 'PT Sans', 'MS Sans Serif', sans-serif;
+  font-family: "PT Sans", "MS Sans Serif", sans-serif;
   text-align: center;
   text-transform: uppercase;
   
@@ -756,6 +758,7 @@ input:-ms-input-placeholder      {color:#fff;}
   height: 20px;
   border-left: 2px solid #fff;
   margin-top: 7px;
+  vertical-align: baseline;
 }
 
 .price-max {
@@ -824,6 +827,7 @@ input:-ms-input-placeholder      {color:#fff;}
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   padding: 0;
+  vertical-align: baseline;
 }
 
 .btn-show:hover {
@@ -892,6 +896,7 @@ input:-ms-input-placeholder      {color:#fff;}
   right: 40px;
   margin-top: 4px;
   font-size: 0;
+  vertical-align: baseline;
 }
 
 .sorting-direction i {
@@ -972,12 +977,13 @@ input:-ms-input-placeholder      {color:#fff;}
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'PT Sans', 'MS Sans Serif', sans-serif;
+  font-family: "PT Sans", "MS Sans Serif", sans-serif;
   text-align: center;
   
   display: inline-block;
   height: 27px;
   margin-right: 6px;
+  vertical-align: baseline;
 }
 
 .btn-hotel:hover {
@@ -1018,6 +1024,7 @@ input:-ms-input-placeholder      {color:#fff;}
   display: inline-block;
   width: 110px;
   background: #f2f2f2;
+  vertical-align: baseline;
   margin-top: 27px;
   margin-right: 1px;
   padding: 3px 0;
