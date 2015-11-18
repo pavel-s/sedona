@@ -434,35 +434,46 @@ input[name="departure-date"] {
   padding-right: 7px
 }
 
-.input-calendar:after {
-  content: "\e800";
+.label-date {
+  font-size: 0;
+}
+
+.label-date span {
+  font-size: 14px;
+}
+
+.label-date .icon-calendar {
   color: #c2c2c2;
   font-size: 21px;
   font-weight: 400;
   font-family: "symbols-sedona";
-  line-height: 26px;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
   
   position: absolute;
   top: 61px;
-  right: 64px;
+  right: 60px
 }
 
-br + .input-calendar:after {
+input[name="departure-date"] + .icon-calendar {
   top: 128px;
+}
+
+.label-date .icon-calendar:hover {
+  color: #000;
+}
+
+.label-date .icon-calendar:active {
+  color: #81b3d2;
 }
 
 input[name="arrival-date"] {
   margin-top: 55px;
-  margin-left: 18px;
+  margin-left: 21px;
 }
 
 input[name="departure-date"] {
   margin-top: 29px;
   margin-bottom: 30px;
-  margin-left: 15px;
+  margin-left: 19px;
 }
 
 .form-third-row {
