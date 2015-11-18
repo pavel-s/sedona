@@ -530,12 +530,6 @@ input[name="children"] {
   background-image: url("../img/map.jpg");
 }
 
-.map iframe {
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-
 .main-footer {
   line-height: 120px;
   
