@@ -124,6 +124,7 @@ a:hover {
 
 .main-navigation ul {
   font-size: 0;
+  text-align: left;
   
   list-style: none;
   
@@ -138,7 +139,7 @@ a:hover {
   display: inline-block;
   min-height: 40px;
   width: 110px;
-  padding-top: 16px;
+  padding-top: 14px;
   vertical-align: baseline;
 }
 
@@ -159,12 +160,12 @@ a:hover {
 }
 
 .main-navigation li:nth-child(4n+2) {
-  margin-right: 150px;
+  margin-right: 149px;
   margin-left: 43px;
 }
 
 .main-navigation li:nth-child(4n+3) {
-  margin-right: 43px;
+  margin-right: 44px;
 }
 
 .main-navigation li:nth-child(4n+3),
@@ -181,11 +182,11 @@ a:hover {
   color: #000000;
   font-size: 21px;
   
-  width: 440px;
+  width: 450px;
   margin-top: 56px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .index-header + p {
@@ -194,10 +195,10 @@ a:hover {
 
 .feature-1,
 .feature-2 {
+  color: #fff;
   min-height: 256px;
   width: 768px;
   background-color: #81b3d2;
-  color: #fff;
 }
 
 .features-item {
@@ -217,10 +218,10 @@ a:hover {
 
 .feature-1 .features-item {
   float: left;
-  width: 177px;
+  width: 179px;
   margin: 0 auto;
-  padding-left: 39.5px;
-  padding-right: 39.5px;
+  padding-left: 37px;
+  padding-right: 37px;
 }
 
 .features-title {
@@ -231,29 +232,26 @@ a:hover {
   float: right;
 }
 
-.features-more {
-  padding: 0 4.5px;
-}
-
 .features-more .features-item {
   float: left;
   min-height: 330px;
-  width: 165px;
-  padding-left: 44px;
-  padding-right: 44px;
+  width: 33.33%;
 }
 
-.features-more .features-item:nth-child(2) {
-  width: 160px;
-  padding-left: 46.5px;
-  padding-right: 46.5px;
+.features-more-title + p {
+  width: 165px;
+  margin: 0 auto;
+}
+
+.features-more .features-more-text-custom {
+  width: 157px;
 }
 
 .features-more-title {
   font-weight: 700;
   
   margin-top: 52px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .features-more-title:before {
@@ -263,6 +261,7 @@ a:hover {
   width: 80px;
   margin: 0 auto;
   margin-bottom: 29px;
+  
 }
 
 .features-item:nth-child(1) .features-more-title:before {
@@ -290,8 +289,8 @@ a:hover {
 }
 
 .feature-2 .features-title {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .features-3-to-5 .features-item {
@@ -317,13 +316,16 @@ a:hover {
 
 .search-hotel-title {
   font-size: 30px;
-  line-height: 32px;
+  line-height: 24px;
   
   margin-top: 0;
-  padding-top: 53px;
+  padding-top: 56px;
+  margin-bottom: 30px;
 }
 
 .search-hotel-title + p {
+  line-height: 24px;
+  
   width: 500px;
   margin: 0 auto;
 }
@@ -385,7 +387,7 @@ a:hover {
   
   position: absolute;
   left: 100px;
-  top: -100px;
+  top: -104px;
   
   height: 395px;
   width: 513px;
@@ -399,7 +401,7 @@ a:hover {
 }
 
 .search-hotel-form-show {
-  top: 295px;
+  top: 291px;
   z-index: 10;
   transition: top 0.8s ease-in-out, z-index 1s step-end;
 }
@@ -574,6 +576,7 @@ input[name="children"] {
 
 .social-btn {
   font-size: 0;
+  min-height: 120px;
 }
 
 .social-btn:before {  
@@ -589,7 +592,9 @@ input[name="children"] {
   width: 46px;
   height: 48px;
   background: #81b3d2;
-  vertical-align: middle;
+  vertical-align: top;
+  margin-right: 2px;
+  margin-top: 36px;
 }
 
 .social-btn:hover:before {
