@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'symbols-sedona';
-  src: url('../font/symbols-sedona.eot?60737633');
-  src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
-       url('../font/symbols-sedona.woff?60737633') format('woff'),
-       url('../font/symbols-sedona.ttf?60737633') format('truetype'),
-       url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  font-family: "symbols-sedona";
+  src: url("../font/symbols-sedona.eot?60737633");
+  src: url("../font/symbols-sedona.eot?60737633#iefix") format("embedded-opentype"),
+       url("../font/symbols-sedona.woff?60737633") format("woff"),
+       url("../font/symbols-sedona.ttf?60737633") format("truetype"),
+       url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,8 +13,8 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'symbols-sedona';
-    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+    font-family: "symbols-sedona";
+    src: url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
   }
 }
 */
@@ -50,17 +50,17 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-star:before { content: '\2605'; } /* '★' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-calendar:before { content: '\e800'; } /* '' */
-.icon-plus:before { content: '\e801'; } /* '' */
-.icon-minus:before { content: '\e802'; } /* '' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-facebook:before { content: "\66"; } /* "f" */
+.icon-twitter:before { content: "\74"; } /* "t" */
+.icon-up-dir:before { content: "\25b2"; } /* "▲" */
+.icon-down-dir:before { content: "\25bc"; } /* "▼" */
+.icon-star:before { content: "\2605"; } /* "★" */
+.icon-check-off:before { content: "\2610"; } /* "☐" */
+.icon-check-on:before { content: "\2611"; } /* "☑" */
+.icon-calendar:before { content: "\e800"; } /* "" */
+.icon-plus:before { content: "\e801"; } /* "" */
+.icon-minus:before { content: "\e802"; } /* "" */
+.icon-youtube:before { content: "\f39e"; } /* "" */
 
 /***** Page styles ******/
 
@@ -257,7 +257,7 @@ a:hover {
 }
 
 .features-more-title:before {
-  content: '';
+  content: "";
   display: block;
   height: 80px;
   width: 80px;
