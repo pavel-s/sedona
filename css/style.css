@@ -965,6 +965,15 @@ input:-ms-input-placeholder      {color:#fff;}
   margin-bottom: 4px;
 }
 
+.hotel-info a:first-child:hover {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.hotel-info a:first-child:active {
+  color: #cacaca;
+}
+
 .hotel-info p {
   font-size: 14px;
   
