@@ -778,6 +778,11 @@ input[name="children"] {
   vertical-align: middle;
 }
 
+.custom-checkbox:enabled + label:hover:before,
+.custom-checkbox:disabled + label:hover:before {
+  cursor: pointer;
+}
+
 .custom-checkbox:checked + label:before {
   content: "\2611";
 }
