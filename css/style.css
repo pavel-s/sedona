@@ -434,7 +434,6 @@ a:hover {
 }
 
 .search-form input:hover {
-  background: #ebebeb;
   border-color: #ebebeb;
 }
 
@@ -449,6 +448,12 @@ input[name="departure-date"] {
   padding: 1px 10px;
   padding-right: 7px
 }
+
+.search-form input::-webkit-input-placeholder {color:#000;}
+.search-form input::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+.search-form input:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.search-form input:-ms-input-placeholder      {color:#000;}
+.search-form input:placeholder                {color:#000;}
 
 .label-date {
   font-size: 0;
@@ -551,6 +556,35 @@ input[name="children"] {
   height: 58px;
   width: 458px;
   margin-top: 54px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.search-hotel-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .map {
@@ -768,10 +802,11 @@ input[name="children"] {
   vertical-align: middle;
 }
 
-input::-webkit-input-placeholder {color:#fff;}
-input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
-input:-ms-input-placeholder      {color:#fff;}
+.hotel-filter input::-webkit-input-placeholder {color:#fff;}
+.hotel-filter input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.hotel-filter input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.hotel-filter input:-ms-input-placeholder      {color:#fff;}
+.hotel-filter input:placeholder                {color:#fff;}
 
 .price-min {
   border-right: 0;
@@ -858,8 +893,8 @@ input:-ms-input-placeholder      {color:#fff;}
   border-radius: 3px;
   margin-left: 44px;
   background: none;
-  box-sizing: content-box;
   -moz-box-sizing: content-box;
+  box-sizing: content-box;
   padding: 0;
   vertical-align: baseline;
 }
@@ -883,6 +918,7 @@ input:-ms-input-placeholder      {color:#fff;}
   padding-left: 46px;
   padding-right: 46px;
   border-bottom: 1px dotted #e5e5e5;
+  background-color: #fff;
 }
 
 .found-title {
@@ -959,6 +995,7 @@ input:-ms-input-placeholder      {color:#fff;}
   min-height: 150px;
   border-bottom: 1px dotted #e5e5e5;
   padding-left: 46px;
+  background-color: #fff;
 }
 
 .hotel-card div {
