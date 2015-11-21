@@ -822,7 +822,7 @@ input[name="children"] {
 
 .hotel-filter input::-webkit-input-placeholder {color:#fff;}
 .hotel-filter input::-moz-placeholder {
-  color:#000;
+  color:#fff;
   opacity: 1;
 }/* Firefox 19+ */
 .hotel-filter input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
