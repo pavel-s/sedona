@@ -452,8 +452,11 @@ input[name="departure-date"] {
 }
 
 .search-form input::-webkit-input-placeholder {color:#000;}
-.search-form input::-moz-placeholder          {color:#000;}/* Firefox 19+ */
-.search-form input:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.search-form input::-moz-placeholder {
+  color:#000;
+  opacity: 1;
+}/* Firefox 19+ */
+.search-form input:-moz-placeholder          {color:#000;}/* Firefox 18- */
 .search-form input:-ms-input-placeholder      {color:#000;}
 .search-form input:placeholder                {color:#000;}
 
@@ -818,7 +821,10 @@ input[name="children"] {
 }
 
 .hotel-filter input::-webkit-input-placeholder {color:#fff;}
-.hotel-filter input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.hotel-filter input::-moz-placeholder {
+  color:#000;
+  opacity: 1;
+}/* Firefox 19+ */
 .hotel-filter input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
 .hotel-filter input:-ms-input-placeholder      {color:#fff;}
 .hotel-filter input:placeholder                {color:#fff;}
