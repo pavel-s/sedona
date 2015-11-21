@@ -5,11 +5,11 @@
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-   
-    <header class="main-header container clearfix">
+    <div class="container">
+    <header class="main-header clearfix">
         
         <a href="index.html" class="logo">Главная</a>
         <nav class="main-navigation">
@@ -32,11 +32,12 @@
     </header>
 
     <main>
-      <div class="container">
        
         <div class="intro"></div>
-        <h1 class="index-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="features-list-header clearfix">
+          <h1 class="index-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <div class="feature-1 clearfix">
 
           <div class="features-item">
@@ -146,10 +147,10 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705655.9858420951!2d-112.22539168292994!3d34.75528589997139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1446121798675"  allowfullscreen>
           </iframe> 
         </div>
-      </div>
+        
     </main>
 
-    <footer class="main-footer index-footer  container">     
+    <footer class="main-footer index-footer">     
     
     <div class="footer-block footer-hashtag">
       #visitsedona
@@ -169,6 +170,7 @@
     </div>
     
     </footer>
+    </div>
     <script src="js/search-hotel.min.js"></script>
   </body>
 </html>
