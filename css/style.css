@@ -545,8 +545,20 @@ input[name="children"] {
   position: relative;
   height: 593px;
   width: 768px;
-  z-index: -100;
   background-image: url("../img/map.jpg");
+  z-index: 0;
+  transition: z-index 1s step-end;
+}
+
+.map-hide {
+  z-index: -100;
+  transition: z-index 1s step-start;
+}
+
+.map iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .main-footer {
